@@ -5,11 +5,11 @@ from .forms import SignUpForm
 
 
 # View for the home page
-@login_required
+#@login_required
 def home(request):
     return render(request, 'dashboard/home.html')
 
-
+# View for the signup page
 def signup(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST)
@@ -22,4 +22,6 @@ def signup(request):
             return redirect('home')
     else:
         form = SignUpForm()
-    return render(request, 'dashboard/signup.html', {'form':form})
+    return render(request, 'dashboard/signup.html', {'form': form})
+
+
