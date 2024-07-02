@@ -4,12 +4,16 @@
 <head>
     <meta charset="utf-8" />
     <title>Financial Dashboard</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 </head>
 
 <body>
-    <h1>Welcome to the Financial Dashboard</h1>
-    <p>User: {{ user.username}}</p>
-    <a href="{% url 'logout' %}">Logout</a>
+    <div class="container">
+        <h1>Welcome to the Financial Dashboard</h1>
+        <p>User: {{ user.username }}</p>
+        <a href="{% url 'logout' %}">Logout</a>
+    </div>
 </body>
 
 </html>

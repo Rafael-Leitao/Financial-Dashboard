@@ -3,11 +3,15 @@
 
 <head>
     <title>Logged Out</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 </head>
 
 <body>
-    <h1>You have been logged Out</h1>
-    <a href="{% url 'login' %}">Login again</a>
+    <div class="container">
+        <h1>You have been logged out</h1>
+        <a href="{% url 'login' %}">Login again</a>
+    </div>
 </body>
 
 </html>
