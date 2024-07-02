@@ -2,3 +2,4 @@
 venv/
 env/
 .venv/
+dashboard/secret_keys.py
