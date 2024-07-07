@@ -1,5 +1,4 @@
 # Ignore common virtual environment directories
-venv/
-env/
+
 .venv/
 dashboard/secret_keys.py
