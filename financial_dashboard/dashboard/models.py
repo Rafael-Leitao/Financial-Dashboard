@@ -12,7 +12,7 @@ class Transaction(models.Model):
     category = models.CharField(max_length=100)
 
     def __str__(self):
-        return f'{self.description} - {self.amount}'
+        return f'{self.user} - {self.description} - {self.amount}'
     
 class Budget(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
